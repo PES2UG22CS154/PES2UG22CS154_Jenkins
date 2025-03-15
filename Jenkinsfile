@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Building the project...'
-                    sh 'g++ -o hello.cpp' // Replace 'program.cpp' with your actual file name
+                    sh 'g++ -o YOUR_SRN-1 hello.cpp' // Replace 'program.cpp' with your actual file name
                 }
             }
         }
@@ -33,6 +33,6 @@ pipeline {
     post {
         failure {
             echo 'Pipeline failed'
-        }
-    }
+        }
+    }
 }
