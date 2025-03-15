@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Building the project...'
-                    sh 'g++ -o YOUR_SRN-1 hello.cpp' // Replace 'program.cpp' with your actual file name
+                    sh 'g++ -o PES2UG22CS154-1 hello.cpp' // Replace 'program.cpp' with your actual file name
                 }
             }
         }
