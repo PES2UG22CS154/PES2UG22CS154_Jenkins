@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Setup') {
+        sta('Setup') {
             steps {
                 sh 'g++ --version || { echo "g++ not found"; exit 1; }'
             }
         }
 
         stage('Clone repository') {
-            steps {
+            st {
                 checkout([$class: 'GitSCM', 
                     branches: [[name: '*/main']], 
                     userRemoteConfigs: [[url: 'https://github.com/PES2UG22CS154/PES2UG22CS154_Jenkins.git', credentialsId: 'github-pat']]
